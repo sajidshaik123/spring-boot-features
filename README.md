@@ -1,2 +1,2 @@
-# spring-boot-utilities-open-source
+# spring-boot-features
 This project is to show all the spring boot feature
