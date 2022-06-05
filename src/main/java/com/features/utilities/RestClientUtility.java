@@ -144,12 +144,12 @@ public class RestClientUtility {
 	}
 
 	public <T> ResponseEntity<T> getForObject(String url, Class<T> responseClass) {
-		logger.info("url: {}", url);
+		logger.info("url: {} responseClass {} ", url, responseClass.getSimpleName());
 		return exec(() -> ResponseEntity.ok(restTemplate.getForObject(url, responseClass)), responseClass);
 	}
 
 	public <T> ResponseEntity<T> getForObject(String url, HttpEntity<T> requestEntity, Class<T> responseClass) {
-		logger.info("url: {}", url);
+		logger.info("url: {} responseClass {} ", url, responseClass.getSimpleName());
 		return exec(() -> restTemplate.exchange(url, HttpMethod.GET, requestEntity, responseClass), responseClass);
 	}
 
