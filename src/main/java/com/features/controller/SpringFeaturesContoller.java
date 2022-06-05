@@ -17,7 +17,7 @@ public class SpringFeaturesContoller {
 
 	@GetMapping("/health")
 	public static String healthCheck() {
-		String healthMessage = SpringBootFeatures.class.getSimpleName() + "Server running!!";
+		String healthMessage = SpringBootFeatures.class.getSimpleName() + " Server running!!";
 		System.out.println(healthMessage);
 		return healthMessage;
 	}

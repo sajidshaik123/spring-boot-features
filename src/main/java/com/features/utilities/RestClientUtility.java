@@ -158,7 +158,4 @@ public class RestClientUtility {
 		logger.info("url: {}", url);
 		return exec(() -> restTemplate.exchange(url, HttpMethod.POST, requestEntity, responseClass), responseClass);
 	}
-	public String print(){
-		return "yes";
-	}
 }
