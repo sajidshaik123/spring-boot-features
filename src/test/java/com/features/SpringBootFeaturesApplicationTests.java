@@ -3,11 +3,10 @@ package com.features;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringBootFeaturesApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+/*
+ * @SpringBootTest class SpringBootFeaturesApplicationTests {
+ * 
+ * @Test void contextLoads() { }
+ * 
+ * }
+ */
